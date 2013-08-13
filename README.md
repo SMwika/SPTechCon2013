@@ -2,4 +2,5 @@
 
 Code Shown in Heather and Dustin's SPTechCon Demos, Boston 2013
 
-You can also check out our Sublime Text snippets - speinc/SPSnippets
+You can also check out our [Sublime Text snippets](https://github.com/speinc/SPSnippets)
+
