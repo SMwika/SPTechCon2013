@@ -18,8 +18,8 @@
             </div>
         </section>
         <div id="buttons">
-            <div id="back" data-delta="-1">[Back]</div>
-            <div id="forward" data-delta="1">[Forward]</div>
+            <div id="carousel_back" data-delta="-1">[Back]</div>
+            <div id="carousel_forward" data-delta="1">[Forward]</div>
         </div>
         <script>
             <![CDATA[
@@ -33,7 +33,7 @@ var init = function() {
         btnForward = document.getElementById('carousel_forward'),
         onButtonClick = function(e) {
             alert('yo');
-            var step = parseInt(e.target.getAttribute('data-increment'));
+            var step = parseInt(e.target.getAttribute('data-delta'));
             delta += (360 / imageCount) * step * -1;
             carousel.style['-webkit-transform'] = 'translateZ( -288px ) rotateY(' +
                 delta + 'deg)';
