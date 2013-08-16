@@ -22,28 +22,7 @@
             <div id="carousel_forward" data-delta="1">[Forward]</div>
         </div>
         <script>
-            <![CDATA[
-                /*jshint strict:false */
-var init = function() {
-    var carousel = document.getElementById('carousel'),
-        pagers = document.querySelectorAll('#buttons div'),
-        imageCount = carousel.children.length,
-        delta = 0,
-        btnBack = document.getElementById('carousel_back'),
-        btnForward = document.getElementById('carousel_forward'),
-        onButtonClick = function(e) {
-            alert('yo');
-            var step = parseInt(e.target.getAttribute('data-delta'));
-            delta += (360 / imageCount) * step * -1;
-            carousel.style['-webkit-transform'] = 'translateZ( -288px ) rotateY(' +
-                delta + 'deg)';
-            e.preventDefault();
-        };
-    btnBack.addEventListener('click', onButtonClick, false);
-    btnForward.addEventListener('click', onButtonClick, false);
-};
-window.addEventListener('DOMContentLoaded', init, false);
-            ]]>
+            <![CDATA[var init=function(){var e=document.getElementById("carousel"),t=e.children.length,n=0,a=document.getElementById("carousel_back"),r=document.getElementById("carousel_forward"),d=function(a){Alert("yo");var r=parseInt(a.target.getAttribute("data-delta"));n+=-360/t*r,e.style["-webkit-transform"]="translateZ( -288px ) rotateY("+n+"deg)",a.preventDefault()};a.addEventListener("click",d,!1),r.addEventListener("click",d,!1)};window.addEventListener("DOMContentLoaded",init,!1);]]>
         </script>
     <!-- end wrapper -->
 </xsl:template>
